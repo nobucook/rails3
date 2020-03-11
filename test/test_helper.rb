@@ -9,6 +9,10 @@ class ActiveSupport::TestCase
   fixtures :all
   include ApplicationHelper
 
+  def is_logged_in?
+    !session[:user_id].nil?
+  end
+
   def setup
     @base_title = "Ruby on Rails Tutorial Sample App"
   end
