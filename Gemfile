@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails',        '5.1.6'
 gem 'bcrypt',        '3.1.12'
+gem 'faker',         '1.7.3'
+gem 'will_paginate', '3.1.6'
+gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootstrap-sass', '3.3.7'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
@@ -16,7 +19,6 @@ group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'pry'
   gem 'pry-rails'
-  gem 'pry-byebug'
   gem 'pry-doc'
 end
 
@@ -27,7 +29,6 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
   gem 'pry'
   gem 'pry-rails'
-  gem 'pry-byebug'
   gem 'pry-doc'
 end
 
